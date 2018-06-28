@@ -1,0 +1,12 @@
+<launch>
+
+  <param name="use_sim_time" value="true"\>
+  
+  <arg name="khepera_dns" default="192.168.50.64" />
+  <arg name="khepera_port" default="4100" />
+
+  <node name="khepera_wheels" pkg="kteams_node" type="khepera_wheels_node" respawn="true" args="$(arg khepera_dns) $(arg khepera_port)"/>
+
+  
+
+</launch>
